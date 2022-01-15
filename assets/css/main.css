@@ -1,0 +1,124 @@
+@import url("setup.css");
+
+/* header */
+
+header {
+  background-image: url("../img/hero.jpeg");
+  background-size: cover;
+  background-position: center center;
+  height: 941px;
+}
+
+header > nav {
+  padding: 30px 0;
+}
+
+.navigation li {
+  list-style: none;
+  margin-left: 48px;
+}
+
+.navigation li > a {
+  color: #fff;
+}
+
+#hero {
+  margin-top: 120px;
+}
+
+.counter {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  width: fit-content;
+  width: -moz-fit-content;
+}
+
+.counter-box {
+  background-color: #070d12;
+  padding: 22px 22px;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  margin: 15px;
+}
+
+.counter > .counter-box .counter-font-big {
+  width: fit-content;
+  font-size: 70px;
+  font-weight: 600;
+  letter-spacing: 14px;
+}
+
+.counter > .counter-box .counter-font-small {
+  width: fit-content;
+  word-spacing: 2px;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.counter-separator {
+  font-size: 35px;
+  font-weight: 600;
+  color: #fff;
+}
+
+#about {
+  margin-top: 106px;
+  background-image: url("../img/decor1.svg");
+  background-position: top left;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.about-text {
+  position: relative;
+}
+
+.about-text > .decor1 {
+  width: 100px;
+  position: absolute;
+}
+
+.about-img {
+  background-image: url("../img/decor2.svg");
+  background-position: bottom right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#roadmap {
+  margin-top: 181px;
+  background-image: url("../img/mountain-view.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding-bottom: 20vh;
+}
+
+.roadmap-block {
+  margin-top: 32px;
+}
+
+.roadmap-block .roadmap-left-box {
+  background-image: url("../img/roadmap-rectangle.svg");
+  padding: 23px 75px;
+}
+
+.roadmap-block .dotted {
+  border-top: 5px dashed #5ab1c1;
+  width: 50px;
+  align-self: center;
+  height: 1px;
+}
+
+.roadmap-block .chain {
+  margin-top: -10%;
+}
+
+.roadmap-block .roadmap-right-box {
+  background: rgba(40, 255, 229, 0.3);
+  padding-left: 25px;
+  border: 2px solid rgba(40, 255, 229, 0.3);
+  border-radius: 12px;
+}
