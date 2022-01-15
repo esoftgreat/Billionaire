@@ -122,3 +122,26 @@ header > nav {
   border: 2px solid rgba(40, 255, 229, 0.3);
   border-radius: 12px;
 }
+
+#description {
+  /* background-image: url("../img/decor3.svg"); */
+  padding: 110px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#team {
+  background-image: url("../img/forest.svg");
+  padding: 180px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 100px;
+}
+
+.team-title {
+  background-image: url("../img/ellipse.svg");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 80px;
+}
