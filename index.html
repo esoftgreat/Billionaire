@@ -20,8 +20,8 @@
       <nav>
         <div class="container">
           <div class="d-flex justify-content-between">
-            <img src="assets/img/logo.png" width="291px" alt="" srcset="" />
-            <div class="d-flex navigation align-items-center">
+            <img src="assets/img/logo.svg" id="logo" alt="" srcset="" />
+            <div class="d-none d-md-flex navigation align-items-center">
               <li><a href="">Home</a></li>
               <li><a href="">About</a></li>
               <li><a href="">Roadmap</a></li>
@@ -30,8 +30,11 @@
             </div>
 
             <div class="d-flex">
-              <img src="assets/img/icon/discord.png" width="48px" class="mx-2" alt="" srcset="" />
-              <img src="assets/img/icon/twitter.png" width="48px" class="mx-2" alt="" srcset="" />
+              <img src="assets/img/icon/discord.png" width="35px" class="mx-2" alt="" srcset="" />
+              <img src="assets/img/icon/twitter.png" width="35px" class="mx-2" alt="" srcset="" />
+              <button class="menubar-button d-block d-md-none">
+                <img src="assets/img/icon/hamburger.svg" alt="" srcset="" />
+              </button>
             </div>
           </div>
         </div>
@@ -77,7 +80,7 @@
     <main>
       <div id="about">
         <div class="container px-md-5">
-          <div class="row">
+          <div class="row flex-column-reverse">
             <div class="col-md-5 about-text">
               <div class="decor1"></div>
               <h2>About</h2>
@@ -89,7 +92,7 @@
               </p>
             </div>
             <div class="col-md-7 about-img">
-              <img src="assets/img/about.png" width="80%" class="d-block ms-auto" alt="" />
+              <img src="assets/img/about.png" width="80%" class="d-block ms-md-auto mx-auto mb-md-0 mb-5" alt="" />
             </div>
           </div>
         </div>
@@ -107,7 +110,7 @@
           <div class="roadmap-block">
             <div class="d-flex">
               <div class="roadmap-left-box">
-                <img src="assets/img/roadmap-box-1.svg" class="d-block mx-auto" alt="" srcset="" />
+                <img src="assets/img/roadmap-box-1.svg" class="d-block mx-auto roadmap-img" alt="" srcset="" />
               </div>
               <div class="dotted d-flex align-items-center">
                 <img src="assets/img/chain.svg" class="d-block mx-auto chain" alt="" srcset="" />
@@ -123,7 +126,7 @@
           <div class="roadmap-block">
             <div class="d-flex">
               <div class="roadmap-left-box">
-                <img src="assets/img/roadmap-box-1.svg" class="d-block mx-auto" alt="" srcset="" />
+                <img src="assets/img/roadmap-box-1.svg" class="d-block mx-auto roadmap-img" alt="" srcset="" />
               </div>
               <div class="dotted d-flex align-items-center">
                 <img src="assets/img/chain.svg" class="d-block mx-auto chain" alt="" srcset="" />
@@ -141,7 +144,7 @@
           <div class="roadmap-block">
             <div class="d-flex">
               <div class="roadmap-left-box">
-                <img src="assets/img/roadmap-box-1.svg" class="d-block mx-auto" alt="" srcset="" />
+                <img src="assets/img/roadmap-box-1.svg" class="d-block mx-auto roadmap-img" alt="" srcset="" />
               </div>
               <div class="dotted d-flex align-items-center">
                 <img src="assets/img/chain.svg" class="d-block mx-auto chain" alt="" srcset="" />
@@ -159,7 +162,7 @@
           <div class="roadmap-block">
             <div class="d-flex">
               <div class="roadmap-left-box">
-                <img src="assets/img/roadmap-box-1.svg" class="d-block mx-auto" alt="" srcset="" />
+                <img src="assets/img/roadmap-box-1.svg" class="d-block mx-auto roadmap-img" alt="" srcset="" />
               </div>
               <div class="dotted d-flex align-items-center">
                 <img src="assets/img/chain.svg" class="d-block mx-auto chain" alt="" srcset="" />
@@ -177,7 +180,7 @@
           <div class="roadmap-block">
             <div class="d-flex">
               <div class="roadmap-left-box">
-                <img src="assets/img/roadmap-box-1.svg" class="d-block mx-auto" alt="" srcset="" />
+                <img src="assets/img/roadmap-box-1.svg" class="d-block mx-auto roadmap-img" alt="" srcset="" />
               </div>
               <div class="dotted d-flex align-items-center">
                 <img src="assets/img/chain.svg" class="d-block mx-auto chain" alt="" srcset="" />
@@ -198,10 +201,10 @@
       <div id="description">
         <div class="container px-md-5">
           <div class="row">
-            <div class="col-md">
+            <div class="col-md col-12">
               <div class="d-flex">
-                <img src="assets/img/avatar/avatar1.svg" alt="" />
-                <img src="assets/img/avatar/avatar2.svg" alt="" />
+                <img src="assets/img/avatar/avatar1.svg" class="avatar-passport" alt="" />
+                <img src="assets/img/avatar/avatar2.svg" class="avatar-passport" alt="" />
               </div>
             </div>
             <div class="col-md">
@@ -260,10 +263,160 @@
             Frequently asked <br />
             questions
           </h2>
+          <br />
+          <div class="collapse-area">
+            <div class="row">
+              <div class="col-md-6 col-sm-12">
+                <div class="faq-box mt-3">
+                  <div class="d-flex justify-content-between">
+                    <a class="txt-20 text-body collapse-trigger" data-collapse-target="collapse-item"> Who are the BBCs? </a>
+                    <div>
+                      <img class="collapse-arrow" src="assets/img/icon/arrow-right.svg" alt="" srcset="" />
+                    </div>
+                  </div>
+                  <div class="collapse-item mt-3">
+                    <div>The Billionaire Bigfoot Club is a Genesis collection of 6000 adorable wealthy bigfoots living in the Ethereum blockchain.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="faq-box mt-3">
+                  <div class="d-flex justify-content-between">
+                    <a class="txt-20 text-body collapse-trigger" data-collapse-target="collapse-item">How many can we mint?</a>
+                    <div>
+                      <img class="collapse-arrow" src="assets/img/icon/arrow-right.svg" alt="" srcset="" />
+                    </div>
+                  </div>
+                  <div class="collapse-item mt-3">
+                    <div>The Billionaire Bigfoot Club is a Genesis collection of 6000 adorable wealthy bigfoots living in the Ethereum blockchain.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="faq-box mt-3">
+                  <div class="d-flex justify-content-between">
+                    <a class="txt-20 text-body collapse-trigger" data-collapse-target="collapse-item"> Which platform will you be on?</a>
+                    <div>
+                      <img class="collapse-arrow" src="assets/img/icon/arrow-right.svg" alt="" srcset="" />
+                    </div>
+                  </div>
+                  <div class="collapse-item mt-3">
+                    <div>The Billionaire Bigfoot Club is a Genesis collection of 6000 adorable wealthy bigfoots living in the Ethereum blockchain.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="faq-box mt-3">
+                  <div class="d-flex justify-content-between">
+                    <a class="txt-20 text-body collapse-trigger" data-collapse-target="collapse-item">How many whitelist spots are there?</a>
+                    <div>
+                      <img class="collapse-arrow" src="assets/img/icon/arrow-right.svg" alt="" srcset="" />
+                    </div>
+                  </div>
+                  <div class="collapse-item mt-3">
+                    <div>The Billionaire Bigfoot Club is a Genesis collection of 6000 adorable wealthy bigfoots living in the Ethereum blockchain.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="faq-box mt-3">
+                  <div class="d-flex justify-content-between">
+                    <a class="txt-20 text-body collapse-trigger" data-collapse-target="collapse-item">What is the mint date?</a>
+                    <div>
+                      <img class="collapse-arrow" src="assets/img/icon/arrow-right.svg" alt="" srcset="" />
+                    </div>
+                  </div>
+                  <div class="collapse-item mt-3">
+                    <div>The Billionaire Bigfoot Club is a Genesis collection of 6000 adorable wealthy bigfoots living in the Ethereum blockchain.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="faq-box mt-3">
+                  <div class="d-flex justify-content-between">
+                    <a class="txt-20 text-body collapse-trigger" data-collapse-target="collapse-item">How do we get whitelisted?</a>
+                    <div>
+                      <img class="collapse-arrow" src="assets/img/icon/arrow-right.svg" alt="" srcset="" />
+                    </div>
+                  </div>
+                  <div class="collapse-item mt-3">
+                    <div>The Billionaire Bigfoot Club is a Genesis collection of 6000 adorable wealthy bigfoots living in the Ethereum blockchain.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="faq-box mt-3">
+                  <div class="d-flex justify-content-between">
+                    <a class="txt-20 text-body collapse-trigger" data-collapse-target="collapse-item">What is the mint price?</a>
+                    <div>
+                      <img class="collapse-arrow" src="assets/img/icon/arrow-right.svg" alt="" srcset="" />
+                    </div>
+                  </div>
+                  <div class="collapse-item mt-3">
+                    <div>The Billionaire Bigfoot Club is a Genesis collection of 6000 adorable wealthy bigfoots living in the Ethereum blockchain.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="faq-box mt-3">
+                  <div class="d-flex justify-content-between">
+                    <a class="txt-20 text-body collapse-trigger" data-collapse-target="collapse-item">Is the team fully-doxxed?</a>
+                    <div>
+                      <img class="collapse-arrow" src="assets/img/icon/arrow-right.svg" alt="" srcset="" />
+                    </div>
+                  </div>
+                  <div class="collapse-item mt-3">
+                    <div>The Billionaire Bigfoot Club is a Genesis collection of 6000 adorable wealthy bigfoots living in the Ethereum blockchain.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="faq-box mt-3">
+                  <div class="d-flex justify-content-between">
+                    <a class="txt-20 text-body collapse-trigger" data-collapse-target="collapse-item">Does the project have utility?</a>
+                    <div>
+                      <img class="collapse-arrow" src="assets/img/icon/arrow-right.svg" alt="" srcset="" />
+                    </div>
+                  </div>
+                  <div class="collapse-item mt-3">
+                    <div>The Billionaire Bigfoot Club is a Genesis collection of 6000 adorable wealthy bigfoots living in the Ethereum blockchain.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        
       </div>
     </main>
+
+    <footer>
+      <div class="container px-md-5">
+        <div class="row align-items-center">
+          <div class="col-lg-3 col-6">
+            <img src="assets/img/logo.svg" class="footer-logo" alt="" srcset="" />
+            <div class="d-flex mt-4">
+              <img src="assets/img/icon/discord.svg" class="d-block me-3" alt="" srcset="" />
+              <img src="assets/img/icon/twitter.svg" class="d-block" alt="" srcset="" />
+            </div>
+          </div>
+          <div class="col-lg-4 col-6">
+            <p class="join-club text-white">
+              Come join the Club on <br />
+              <span class="txt-bold"> January 25th at 8pm EST </span>
+            </p>
+          </div>
+          <div class="col-lg mt-5 mt-lg-0 col-sm-12">
+            <div class="d-flex bottom-nav">
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Roadmap</a></li>
+              <li><a href="">Team</a></li>
+              <li><a href="">FAQ</a></li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -272,6 +425,8 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+
+    <script src="assets/js/main.js "></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

@@ -9,6 +9,10 @@ header {
   height: 941px;
 }
 
+#logo {
+  width: 121px;
+}
+
 header > nav {
   padding: 30px 0;
 }
@@ -20,6 +24,12 @@ header > nav {
 
 .navigation li > a {
   color: #fff;
+}
+
+.menubar-button {
+  background: none;
+  border: none;
+  outline: none;
 }
 
 #hero {
@@ -36,7 +46,7 @@ header > nav {
 
 .counter-box {
   background-color: #070d12;
-  padding: 22px 22px;
+  padding: 8px;
   border-radius: 10px;
   color: #fff;
   text-align: center;
@@ -45,13 +55,14 @@ header > nav {
 
 .counter > .counter-box .counter-font-big {
   width: fit-content;
-  font-size: 70px;
+  font-size: 24px;
   font-weight: 600;
-  letter-spacing: 14px;
+  letter-spacing: 5px;
 }
 
 .counter > .counter-box .counter-font-small {
   width: fit-content;
+  font-size: 7px;
   word-spacing: 2px;
   margin: 0 auto;
   text-transform: uppercase;
@@ -87,13 +98,19 @@ header > nav {
   background-repeat: no-repeat;
 }
 
+/* roadmap */
+
 #roadmap {
   margin-top: 181px;
   background-image: url("../img/mountain-view.svg");
-  background-size: contain;
+
   background-repeat: no-repeat;
   background-position: bottom;
   padding-bottom: 20vh;
+}
+
+.roadmap-img {
+  width: 56px;
 }
 
 .roadmap-block {
@@ -102,7 +119,12 @@ header > nav {
 
 .roadmap-block .roadmap-left-box {
   background-image: url("../img/roadmap-rectangle.svg");
-  padding: 23px 75px;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 12px 22px;
 }
 
 .roadmap-block .dotted {
@@ -118,9 +140,16 @@ header > nav {
 
 .roadmap-block .roadmap-right-box {
   background: rgba(40, 255, 229, 0.3);
+  padding: 12px;
   padding-left: 25px;
+
   border: 2px solid rgba(40, 255, 229, 0.3);
   border-radius: 12px;
+}
+
+/* passport */
+.avatar-passport {
+  width: 196px;
 }
 
 #description {
@@ -144,4 +173,101 @@ header > nav {
   background-size: contain;
   background-repeat: no-repeat;
   padding: 80px;
+}
+
+.faq-box {
+  transition: 0.3s;
+  cursor: pointer;
+  border-radius: 12px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.faq-box.active {
+  padding: 20px;
+  background-color: rgba(40, 255, 229, 0.3);
+}
+
+.faq-box:has() {
+  background-color: rebeccapurple;
+}
+
+.collapse-trigger {
+  font-weight: 600;
+}
+
+.collapse-arrow {
+  transition: 0.3s;
+}
+
+.faq-box.active .collapse-arrow {
+  transform: rotate(90deg);
+}
+
+.collapse-item {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.collapse-item.show {
+  transition: 0.3s;
+  max-height: 300px;
+}
+
+/* footer */
+footer {
+  margin-top: 100px;
+  padding: 47px 0;
+  background-color: #17202d;
+}
+
+footer .footer-logo {
+  width: 125px;
+}
+
+.join-club {
+  font-size: 14px;
+}
+
+.bottom-nav li a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (min-width: 768px) {
+  #logo {
+    width: 191px;
+  }
+
+  .counter-box {
+    padding: 22px;
+  }
+
+  .counter > .counter-box .counter-font-big {
+    font-size: 70px;
+    letter-spacing: 14px;
+  }
+  .counter > .counter-box .counter-font-small {
+    font-size: 14px;
+  }
+
+  .avatar-passport {
+    width: 306px;
+  }
+
+  .roadmap-img {
+    width: 100px;
+  }
+
+  .roadmap-block .roadmap-left-box {
+    padding: 23px 75px;
+  }
+
+  footer .footer-logo {
+    width: 195px;
+  }
+
+  .join-club {
+    font-size: 24px;
+  }
 }
