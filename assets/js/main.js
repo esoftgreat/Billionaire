@@ -15,3 +15,14 @@ function triggerCollapse(el) {
   collapseTarget.classList.toggle("show");
   faqBox.classList.toggle("active");
 }
+
+function openNav() {
+  const sideNavbar = document.querySelector(".side-navbar");
+
+  sideNavbar.classList.add("active");
+}
+function closeNav() {
+  const sideNavbar = document.querySelector(".side-navbar");
+
+  sideNavbar.classList.remove("active");
+}

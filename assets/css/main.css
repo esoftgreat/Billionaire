@@ -1,5 +1,9 @@
 @import url("setup.css");
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* header */
 
 header {
@@ -7,6 +11,67 @@ header {
   background-size: cover;
   background-position: center center;
   height: 941px;
+}
+
+.side-navbar {
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-height: 0;
+  width: 100vw;
+  box-shadow: 0px 2px 30px #eaeaea;
+  z-index: 999;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.side-navbar.active {
+  padding: 1% 9%;
+  max-height: 400px;
+}
+
+.side-navbar ul {
+  padding-left: 0;
+}
+
+.side-navbar ul li {
+  margin-top: 20px;
+  list-style: none;
+}
+
+.side-navbar ul li:hover a {
+  color: salmon;
+}
+
+.side-navbar ul li a {
+  color: #333;
+}
+
+.close-button {
+  position: relative;
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+}
+
+.close-button div {
+  position: absolute;
+  border-radius: 10px;
+}
+
+.close-button div:first-child,
+.close-button div:last-child {
+  width: 25px;
+  height: 1px;
+  border-top: 3px solid #333;
+}
+
+.close-button div:first-child {
+  transform: rotate(45deg);
+}
+.close-button div:last-child {
+  transform: rotate(-45deg);
 }
 
 #logo {
@@ -167,10 +232,6 @@ header > nav {
 }
 
 .team-title {
-  background-image: url("../img/ellipse.svg");
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat;
   padding: 80px;
 }
 
@@ -260,6 +321,13 @@ footer .footer-logo {
 
   .roadmap-block .roadmap-left-box {
     padding: 23px 75px;
+  }
+
+  .team-title {
+    background-image: url("../img/ellipse.svg");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   footer .footer-logo {
