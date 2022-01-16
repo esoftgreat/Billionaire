@@ -224,7 +224,7 @@ header > nav {
 }
 
 #team {
-  background-image: url("../img/forest.svg");
+  background-image: url("../img/team-bg-mobile.svg");
   padding: 180px 0;
   background-size: cover;
   background-repeat: no-repeat;
@@ -328,6 +328,10 @@ footer .footer-logo {
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
+  }
+
+  #team {
+    background-image: url("../img/forest.svg");
   }
 
   footer .footer-logo {
