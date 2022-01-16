@@ -26,3 +26,13 @@ function closeNav() {
 
   sideNavbar.classList.remove("active");
 }
+
+window.onscroll = function () {
+  const nav = document.querySelector("nav");
+  console.log("test");
+  if (document.documentElement.scrollTop >= 100) {
+    nav.style.background = "linear-gradient(rgb(255, 177, 112), rgb(250, 167, 99))";
+  } else {
+    nav.style.background = "transparent";
+  }
+};
