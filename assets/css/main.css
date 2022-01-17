@@ -19,7 +19,22 @@ nav {
   width: 100%;
   top: 0;
   left: 0;
+  z-index: 999;
   /* background : linear-gradient(rgb(255, 177, 112),rgb(250, 167, 99))); */
+}
+
+nav.bellow {
+  background: linear-gradient(rgb(255, 177, 112), rgb(250, 167, 99));
+  animation: addBackground 1s 1;
+}
+
+@keyframes addBackground {
+  from {
+    background: transparent;
+  }
+  to {
+    background: linear-gradient(rgb(255, 177, 112), rgb(250, 167, 99));
+  }
 }
 
 .side-navbar {
@@ -84,7 +99,7 @@ nav {
 }
 
 #logo {
-  width: 121px;
+  width: 50px;
 }
 
 header > nav {
@@ -292,20 +307,32 @@ footer {
 }
 
 footer .footer-logo {
-  width: 125px;
+  width: 75px;
 }
 
 .join-club {
   font-size: 14px;
 }
 
-.bottom-nav li a {
+.bottom-nav ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.bottom-nav ul > li:first-child {
+  margin-left: 6px;
+}
+.bottom-nav ul > li {
+  margin-right: 30px;
+}
+
+.bottom-nav ul > li a {
   color: rgba(255, 255, 255, 0.5);
 }
 
 @media screen and (min-width: 768px) {
   #logo {
-    width: 191px;
+    width: 81px;
   }
 
   .counter-box {
@@ -344,7 +371,7 @@ footer .footer-logo {
   }
 
   footer .footer-logo {
-    width: 195px;
+    width: 105px;
   }
 
   .join-club {

@@ -31,8 +31,8 @@ window.onscroll = function () {
   const nav = document.querySelector("nav");
   console.log("test");
   if (document.documentElement.scrollTop >= 100) {
-    nav.style.background = "linear-gradient(rgb(255, 177, 112), rgb(250, 167, 99))";
+    nav.classList.add("bellow");
   } else {
-    nav.style.background = "transparent";
+    nav.classList.remove("bellow");
   }
 };
