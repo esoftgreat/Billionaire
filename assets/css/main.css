@@ -213,6 +213,7 @@ header > nav {
   background-position: center center;
   background-repeat: no-repeat;
   padding: 12px 6px;
+  border-radius: 12px;
 }
 
 .roadmap-block .dotted {
@@ -366,6 +367,7 @@ footer .footer-logo {
 
   .roadmap-block .roadmap-left-box {
     padding: 23px 75px;
+    border-radius: 0;
   }
 
   .roadmap-block .roadmap-right-box ul li {
