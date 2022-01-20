@@ -99,7 +99,7 @@ nav.bellow {
 }
 
 #logo {
-  width: 121.4px;
+  width: 75px;
 }
 
 header > nav {
@@ -135,16 +135,24 @@ header > nav {
 
 .counter-box {
   background-color: #070d12;
-  padding: 8px;
+  padding: 12px;
   border-radius: 10px;
   color: #fff;
   text-align: center;
-  margin: 15px;
+  margin: 10px;
+}
+
+.counter-box:first-child {
+  margin-left: 0;
+}
+
+.counter-box:last-child {
+  margin-right: 0;
 }
 
 .counter > .counter-box .counter-font-big {
   width: fit-content;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 600;
   letter-spacing: 5px;
 }
@@ -317,7 +325,7 @@ footer {
 }
 
 footer .footer-logo {
-  width: 125px;
+  width: 85px;
 }
 
 .join-club {
@@ -342,11 +350,12 @@ footer .footer-logo {
 
 @media screen and (min-width: 768px) {
   #logo {
-    width: 81px;
+    width: 94px;
   }
 
   .counter-box {
     padding: 22px;
+    margin: 15px;
   }
 
   .counter > .counter-box .counter-font-big {
