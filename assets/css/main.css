@@ -273,6 +273,7 @@ header > nav {
   border-radius: 12px;
   margin-right: 20px;
   margin-left: 20px;
+  padding: 20px 12px;
 }
 
 .faq-box.active {
