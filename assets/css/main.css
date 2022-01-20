@@ -99,7 +99,7 @@ nav.bellow {
 }
 
 #logo {
-  width: 50px;
+  width: 121.4px;
 }
 
 header > nav {
@@ -224,6 +224,7 @@ header > nav {
 
 .roadmap-block .chain {
   margin-top: -10%;
+  display: none;
 }
 
 .roadmap-block .roadmap-right-box {
@@ -233,6 +234,13 @@ header > nav {
 
   border: 2px solid rgba(40, 255, 229, 0.3);
   border-radius: 12px;
+}
+
+.roadmap-block .roadmap-right-box ul {
+  padding-left: 0;
+}
+.roadmap-block .roadmap-right-box ul li {
+  font-size: 12px;
 }
 
 /* passport */
@@ -307,7 +315,7 @@ footer {
 }
 
 footer .footer-logo {
-  width: 75px;
+  width: 125px;
 }
 
 .join-club {
@@ -357,6 +365,14 @@ footer .footer-logo {
 
   .roadmap-block .roadmap-left-box {
     padding: 23px 75px;
+  }
+
+  .roadmap-block .roadmap-right-box ul li {
+    font-size: 18px;
+  }
+
+  .roadmap-block .chain {
+    display: block;
   }
 
   .team-title {
